@@ -42,6 +42,8 @@ module BootstrapCalendarRails
 
         # build one day cell
         def day_cell(day)
+          puts "CARLOS  "
+          puts day
           content_tag :div, class: "cal-span1 cal-cell" do
             content_tag :div, class: day_classes(day) do
               view.capture(day, &callback)
