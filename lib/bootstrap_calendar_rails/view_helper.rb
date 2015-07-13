@@ -10,8 +10,8 @@ module BootstrapCalendarRails
     end
 
     class BootstrapCalendar
-      DAY_NAMES = %w[Domingo Lunes Martes Miercoles Jueves Viernes Sabado]
-      MOBILE_DAY_NAMES = %w[Dom Lun Mar Mie Jue Vie Sab]
+      DAY_NAMES = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
+      MOBILE_DAY_NAMES = %w[Sun Mon Tues Wed Thur Fri Sat]
 
       delegate :content_tag, to: :view
       attr_reader :view, :date, :callback, :options
